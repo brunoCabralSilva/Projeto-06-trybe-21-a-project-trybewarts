@@ -1,121 +1,149 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='pt-br'>
 
 <head>
-  <meta charset="UTF-8">
-  <title>Trybewarts</title>
-  <link rel='stylesheet' type='text/css' href='style.css'>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Andika+New+Basic:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    <link rel='stylesheet' type='text/css' href='style.css'>
+    <meta charset='UTF-8'>
+    <title>Meu Portfólio</title>
+    <link rel='stylesheet' type='text/css' href='style.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Andika+New+Basic:ital,wght@0,400;0,700;1,400;1,700&display=swap"
     rel="stylesheet">
 </head>
-
 <body>
-  <header class='header'>
-    <img class='trybewarts-header-logo' src='images/trybewarts-header-logo.svg' alt='Logo Trybewarts'>
-    <h1 id='trybewarts-header-title'>Trybewarts</h1>
-    <form class='trybewarts-login'>
-      <input type='email' name='email' placeholder='Email' class='input-button-form'>
-      <input type='password' name='password' placeholder='Senha' class='input-button-form'>
-      <button id='btnLogin' class='input-button-form'>Entrar</button>
-    </form>
-  </header>
-  <main>
-    <form id='evaluation-form'>
-      <h1>Formulário de Avaliação</h1>
-      <div class='itens'>
-        <input id='input-name' type='text' placeholder='Nome'>
-        <input id='input-lastname' type='text' placeholder='Sobrenome'>
-      </div>
-      <div class='itens'>
-        <input id='input-email' type='text' placeholder='Email'>
-        <h3>Casa:</h3>
-        <select id='house'>
-          <option id='gitnoria-house' value="Gitnória">Gitnória</option>
-          <option id='reactpuff-house' value='Reactpuff'>Reactpuff</option>
-          <option id='corvinode-house' value='Corvinode'>Corvinode</option>
-          <option id='pytherina-house' value='Pytherina'>Pytherina</option>
-        </select>
-      </div>
-      <hr>
-      <div id='segundo-bloco'>
-        <div class=segundo-bloco>
-          <label id='label-family'>Qual sua família?</label>
-          <div class='juncao_label'>
-            <input id='radio-frontend' type='radio' name='family' value='Frontend'> <label for='radio-frontend'>Família
-              Frontend</label>
-          </div>
-          <div class='juncao_label'>
-            <input id='radio-backend' type='radio' name='family' value='Backend'> <label for='radio-backend'>Família
-              Backend</label>
-          </div>
-          <div class='juncao_label'>
-            <input id='radio-fullStack' type='radio' name='family' value='FullStack'> <label
-              for='radio-fullStack'>Família
-              FullStack</label>
-          </div>
+    <header>
+        <img src='imagens/minha_imagem.png' alt='Foto minha retirada na sala de minha humilde casa' id='minha_foto'>
+        <div id = 'header_data'>
+            <h1 id = 'header_title'>Meu Portfólio</h1>
+            <h2 id = 'header_subtitle'>Bruno Gabryell Cabral da Silva</h2>  
         </div>
-        <div class=segundo-bloco>
-          <label id='label-content'>Qual conteúdo você está com mais vontade de aprender?</label>
-          <div id='conteudo-opcoes'>
-            <div class='juncao_label'>
-              <input type='checkbox' id='hoFs' value='HoFs'><label for='hoFs'>HoFs</label>
-            </div>
-            <div class='juncao_label'>
-              <input type='checkbox' id='jest' value='Jest'><label for='jest'>Jest</label>
-            </div>
-            <div class='juncao_label'>
-              <input type='checkbox' id='promises' value='Promises'><label for='promises'>Promises</label>
-            </div>
-            <div class='juncao_label'>
-              <input type='checkbox' id='react' value='React'><label for='react'>React</label>
-            </div>
-            <div class='juncao_label'>
-              <input type='checkbox' id='sql' value='SQL'><label for='sql'>SQL</label>
-            </div>
-            <div class='juncao_label'>
-              <input type='checkbox' id='python' value='Python'><label for='python'>Python</label>
-            </div>
-          </div>
-        </div>
-      </div>
-      <hr>
-      <div id='label-radio-avalia'>
-        <label id='label-rate'>Como você avalia a Trybewarts?</label>
-        <input type='radio' name='rate' value='1' id='valor1'><label for='valor1' class='label-radio'>1</label>
-        <input type='radio' name='rate' value='2' id='valor2'><label for='valor2' class='label-radio'>2</label>
-        <input type='radio' name='rate' value='3' id='valor3'><label for='valor3' class='label-radio'>3</label>
-        <input type='radio' name='rate' value='4' id='valor4'><label for='valor4' class='label-radio'>4</label>
-        <input type='radio' name='rate' value='5' id='valor5'><label for='valor5' class='label-radio'>5</label>
-        <input type='radio' name='rate' value='6' id='valor6'><label for='valor6' class='label-radio'>6</label>
-        <input type='radio' name='rate' value='7' id='valor7'><label for='valor7' class='label-radio'>7</label>
-        <input type='radio' name='rate' value='8' id='valor8'><label for='valor8' class='label-radio'>8</label>
-        <input type='radio' name='rate' value='9' id='valor9'><label for='valor9' class='label-radio'>9</label>
-        <input type='radio' name='rate' value='10' id='valor10'><label for='valor10' class='label-radio'>10</label>
-      </div>
+        <nav>
+            <ul id = 'nav_menu'>
+                <li class='menu_principal' id = 'nav1'><a href='https://www.linkedin.com/in/bruno-cabral-336076228/'
+                        target='_blank'>LinkedIn</a></li>
+                <li class='menu_principal' id = 'nav2'><a href='https://github.com/brunoCabralSilva' target='_blank'>GitHub</a></li>
+                <li class='menu_principal' id = 'nav3'><a href='https://www.instagram.com/ga.bryell/' target=' _blank'>Instagram</a>
+                </li>
+                <li class='menu_principal' id = 'nav4'><a href='https://www.facebook.com/bruno.gabryell/' target=' _blank'>Facebook</a>
+                </li>
+    
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article id='barra_principal'>
+            <section id='secao_apresentacao'>
+                <h3>Seja bem vindo!</h3>
+                <p class = 'resume'>
+                    Esta é uma página de autoria própria pensada para ser um portfólio sobre mim. A ideia deste site
+                    surgiu
+                    através de uma atividade prática da escola que faço parte: <strong>A Trybe!</strong>
+                </p>
 
-      <label class='textarea'>Deixe seu comentário:</label>
-      <textarea id='textarea' maxlength='500'></textarea>
-      <p id='counter'>500</p>
+                <p class = 'resume'>
+                    Atualmente é lá que eu estudo Desenvolvimento Web, escola que traz uma experiência imersiva com foco
+                    no mundo do trabalho.
+                </p>
+                <p class = 'resume'>
+                    Todavia, já venho de uma jornada muito longa tanto acadêmica quanto profissional.
+                </p>
+                <p>
+                <h4>Ficou curioso? Então saca só um pouco da minha história acadêmica:</h4>
+                <ul>
+                    <li class='minhas_listas'>
+                        <h5>
+                            Técnico em Eletrônica na Escola Técnica Redentorista
+                        </h5>
+                        <img src = 'imagens/redentorista.jpg' alt = 'Emblema da Escola Tecnica Redentorista'>
+                        <p>
+                        Foi o primeiro curso que ingressei após encerrar o ensino médio, iniciando em janeiro de 2011 e
+                        concluindo em julho de 2012
+                        <p>
+                    </li>
+                    <li class='minhas_listas'>
+                        <h5>Superior Tecnólogo em Análise e Desenvolvimento de Sistemas na
+                            Faculdade Maurício de Nassau
+                        </h5>
+                        <img src = 'imagens/nassau.png' alt = 'Emblema da Escola Tecnica Redentorista'>
+                        <p>
+                            Minha paixão por desenvolvimento já existia antes,
+                        mas foi aqui que ela aumentou: Iniciei o curso em Janeiro de 2013 e concluí em Dezembro de 2015
+                        </p>
+                    </li>
+                    <li class='minhas_listas'>
+                        <h5>
+                            Graduação em Engenharia Elétrica na Universidade Federal de
+                            Campina Grande
+                        </h5>
+                        <img src = 'imagens/ufcg.png' alt = 'Emblema da Escola Tecnica Redentorista'>
+                        <p>    
+                        Sentindo saudades da eletrônica trabalhada no meu primeiro curso,
+                        busquei Engenharia Elétrica para suprir minhas duas paixões. Todavia, aos poucos fui vendo que
+                        não era o que eu queria para mim e, no meio desse processo, surgiu a Trybe!
+                        </p></li>
 
-      <label id="label-infos">Você concorda com o uso das informações acima?
-        <input type ="checkbox" id="agreement">
-      </label>
+                    <h4>Um pouco da minha história profissional:</h4>
+                    <ul>
+                        <li class='minhas_listas'><strong>Técnico em Informática na empresa Faculdade Maurício de
+                                Nassau</strong> - Um ano e meio;</li>
+                        <li class='minhas_listas'><strong>Operador de Telemarketing na Orbitall SA</strong> - Dois anos
+                            e sete meses;</li>
+                        <li class='minhas_listas'><strong>Monitor de Operações na Aec Relacionamento e
+                                Responsabilidade</strong> - De 02/10/2019 até os dias atuais;</li>
+                    </ul>
+                    <h4>Nem tudo se resume a trabalho e estudos</h4>
 
-      <button type='submit' id='submit-btn' disabled class='botao-desabilitado'>Enviar</button>
-    </form>
+                    <p>
+                        Apesar de estudar o que você gosta ser uma coisa maravilhosa (e trabalhar ainda mais), existem
+                        outras informações que me definem, como meus Hobbys, que querendo ou não também me moldaram a
+                        ser quem eu sou hoje. Sendo assim, lá vai meu <strong>TOP 5</strong>:
+                    </p>
+                    <ol>
+                        <li class='minhas_listas'><strong>RPG de mesa;</strong></li>
+                        <li class='minhas_listas'><strong>Acampar na natureza;</strong></li>
+                        <li class='minhas_listas'><strong>Fazer Trilhas (também no meio do "nada");</strong></li>
+                        <li class='minhas_listas'><strong>Swordplay</strong> (E como eu sei que muita gente não conhece
+                            o esporte, já vou deixar o link pra você clicar e <a
+                                href="https://guardacampina.wixsite.com/noite" target="_blank" class="link">SABER MAIS
+                                IMEDIATAMENTE! </a>);</li>
+                        <li class='minhas_listas'><strong>Futebol.</strong></li>
+                    </ol>
+                    <img src='imagens/trabalho.jpeg' alt='Eu no ambiente de trabalho da Aec' id = 'foto_trabalho'>
+                    <h2>Isso é tudo, pessoal! "Até logo e obrigado pelos peixes!"</h2>
 
-    <img id='trybewarts-forms-logo' src='images/trybewarts-colored.svg' alt='Trybewarts Logo'>
-  </main>
-  <footer>Direitos reservados à Trybewarts©</footer>
-  <script src='script.js'></script>
+                    <p>
+                        É isto, galera! Este foi um resuminho do resuminho do resuminho de alguns pontos e acontecimentos importantes da minha vida, mas seria impossível definir vinte e oito anos em uma página html/css. Ainda há muito o que viver, aprender e melhorar e por isto estou na Trybe!
+                    </p>
+        </article>
+               
+                <p>
+                    <em>
+                        "Amante do que é tecnológico,
+                        Apaixonado pelo desenvolvimento
+                        E feliz com o caminho que escolhi para mim:
+                        Este sou eu."
+                    </em>
+                </p>
+
+                <ul class='dados_pessoais'>
+                    <li><strong>Bruno Gabryell Cabral da Silva</strong></li>
+                    <li><strong>Idade:</strong> 28 anos</li>
+                    <li><strong>Nacionalidade:</strong> brasileiro</li>
+                    <li><strong>Onde moro atualmente:</strong> Campina Grande - PB</li>
+                </ul>
+
+    </main>
+    <footer>
+        © 2022 Bruno Gabryell, Todos os direitos reservados.
+    </footer>
+
 </body>
 
 </html>
